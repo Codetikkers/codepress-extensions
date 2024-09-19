@@ -1,0 +1,25 @@
+{
+    "name": "codetikkers/codepress-extensions",
+    "description": "Extensions for the codepress framework that can easiy be turned on or off",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+                "Codetikkers\\CodepressExtensions\\": "/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Robbert de Kuiper",
+            "email": "mail@robbertdekuiper.com"
+        }
+    ],
+    "provide": {
+        "codepress/framework": "self.version"
+    },
+    "config": {
+        "allow-plugins": {
+            "composer/installers": false,
+            "koodimonni/composer-dropin-installer": false
+        }
+    }
+}
