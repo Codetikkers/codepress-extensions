@@ -1,5 +1,6 @@
 {
     "name": "codetikkers/codepress-extensions",
+    "version": "1.0.0",
     "description": "Extensions for the codepress framework that can easiy be turned on or off",
     "type": "library",
     "autoload": {
@@ -21,5 +22,7 @@
             "composer/installers": false,
             "koodimonni/composer-dropin-installer": false
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
