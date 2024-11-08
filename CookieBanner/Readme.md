@@ -5,14 +5,32 @@ ACF fields for the banner will automatically be registered on the options page
 
 ## Installation
 
-1.  Copy the assets to the platform resourecs folder 
+1. Add the cookie banner Service provider to the `config/app.php` file
+``` php
+'providers' => [
+    ...
+    Codetikkers\CodepressExtensions\CookieBanner\CookieBannerServiceProvider::class,
+    ...
+]
+```
+
+2. Add the ACF fields hook to the Hookables in the `config/app.php` file
+``` php
+'hooks' => [
+    ...
+    odetikkers\CodepressExtensions\CookieBanner\CookieBannerHook::class,
+    ...
+]
+```
+
+3. Copy the assets to the platform resourecs folder 
 ``` bash
 php artisan vendor:publish --provider="Codetikkers\CodepressExtensions\CookieBanner\CookieBannerServiceProvider" --tag="assets"
 ```
 
-2. Include the published assets in your css and js files
+4. Include the published assets in your css and js files
 
-3. Add the following code to your layout file
+5. Add the following code to your layout file
 ``` html
 <x-cookie-banner />
 ```
