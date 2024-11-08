@@ -12,4 +12,3 @@ Checks if the Gravity Forms plugin and ACF is installed and activated before reg
 ## Extensions Ideas
 
 - Shortpixel image optimizer: Optimize images via the shortpixel API on upload
-- Cookie Consent Banner: Add a cookie consent banner to the website
