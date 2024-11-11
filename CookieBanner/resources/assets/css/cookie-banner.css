@@ -1,0 +1,55 @@
+.c-cookie-banner {
+    --c-cookie-banner-bg-color: #f2f2f2;
+    --c-cookie-bannner-padding: 1rem;
+    --c-cookie-bannner-content-max-width: 1200px;
+
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--c-cookie-banner-bg-color);
+    padding: var(--c-cookie-bannner-padding);
+}
+
+.c-cookie-banner.is-visible {
+    display: block;
+}
+
+.c-cookie-banner__inner {
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    width: min(100%, var(--c-cookie-bannner-content-max-width));
+}
+
+.c-cookie-banner p {
+    margin: 0;
+    width: 100%;
+    flex: none;
+    text-align: center;
+}
+
+@media screen and (min-width: 578px) {
+    .c-cookie-banner p {
+        flex: 1;
+        text-align: left;
+    }
+}
+
+.c-cookie-banner button {
+    flex: none;
+}
+
+.c-cookie-banner__accept {
+    display: inline-flex;
+    gap: 0.2rem;
+}
+
+.c-cookie-banner__accept svg {
+    width: 1rem;
+    height: auto;
+}
