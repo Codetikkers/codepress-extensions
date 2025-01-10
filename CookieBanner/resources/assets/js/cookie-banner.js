@@ -12,6 +12,10 @@ class CookieBanner extends HTMLElement {
             this.remove();
             return;
         }
+        if (cookieValue === '0') {
+            this.remove();
+            return;
+        }
         this.renderCookie();
     }
 
