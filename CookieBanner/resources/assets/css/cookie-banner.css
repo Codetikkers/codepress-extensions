@@ -42,6 +42,8 @@
 
 .c-cookie-banner button {
     flex: none;
+    display: flex;
+    align-items: center;
 }
 
 .c-cookie-banner__accept {
@@ -52,4 +54,5 @@
 .c-cookie-banner__accept svg {
     width: 1rem;
     height: auto;
+    margin-top: 2px; /* optically center the icon */
 }
