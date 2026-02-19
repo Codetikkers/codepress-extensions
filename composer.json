@@ -14,6 +14,9 @@
             "email": "mail@robbertdekuiper.com"
         }
     ],
+    "require": {
+        "wpackagist-plugin/koko-analytics": "^2.2"
+    },
     "provide": {
         "codepress/framework": "self.version"
     },
