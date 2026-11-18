@@ -1,6 +1,6 @@
 {
     "name": "codetikkers/codepress-extensions",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Extensions for the codepress framework that can easiy be turned on or off",
     "type": "library",
     "autoload": {
